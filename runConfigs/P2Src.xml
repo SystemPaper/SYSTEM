@@ -1,0 +1,82 @@
+<runs>
+    <!--SRC_MAX_BOTH-->
+    <runConfig>
+        <id>0</id>
+        <runId>1</runId>
+        <linkingConfFilePath>P2/linking-hol.xml</linkingConfFilePath>
+        <incrementLength>10</incrementLength>
+        <initialCollectionPath>../datasetP2/SrcIncs/</initialCollectionPath>
+        <tempOutPath>../dataset/P2/temp/</tempOutPath>
+        <repairMethod>EMB</repairMethod>
+        <resOutPath>../datasets/P2/output/MB.csv</resOutPath>
+        <vertexLabel>clsId</vertexLabel>
+        <resOutInfo>mb</resOutInfo>
+        <srcNames>1,2,3,4,5,6,7,8,9,10</srcNames>
+        <isPreclustering>false</isPreclustering>
+        <isSrcConsistnt>false</isSrcConsistnt>
+    </runConfig>
+
+    <!--SRC_MAX_BOTH_FUSED-->
+    <runConfig>
+        <id>0</id>
+        <runId>1</runId>
+        <linkingConfFilePath>P2/linking-hol.xml</linkingConfFilePath>
+        <incrementLength>10</incrementLength>
+        <initialCollectionPath>../datasetP2/SrcIncs/</initialCollectionPath>
+        <tempOutPath>../dataset/P2/temp/</tempOutPath>
+        <repairMethod>EMB</repairMethod>
+        <resOutPath>../datasets/P2/output/MBFused.csv</resOutPath>
+        <vertexLabel>clsId</vertexLabel>
+        <resOutInfo>embSrcFused</resOutInfo>
+        <isPreclustering>false</isPreclustering>
+        <srcNames>1,2,3,4,5,4,5,6,7,8,9,10</srcNames>
+        <vertexGroupingKey>ClusterId</vertexGroupingKey>
+        <wccPropertyKeyList>name,surname,postcod,suburb,graphLabel,clsId</wccPropertyKeyList>
+        <repetitionAllowed>false,false,false,false,true,true</repetitionAllowed>
+        <isEdgeAggregation>false</isEdgeAggregation>
+        <isSrcConsistnt>false</isSrcConsistnt>
+
+
+    </runConfig>
+
+    <!--SRC_ONE_DEPTH_RREC    -->
+    <runConfig>
+        <id>1</id>
+        <runId>4</runId>
+        <linkingConfFilePath>P2/linking-hol.xml</linkingConfFilePath>
+        <incrementLength>10</incrementLength>
+        <initialCollectionPath>../datasetP2/SrcIncs/</initialCollectionPath>
+        <tempOutPath>../dataset/P2/temp/</tempOutPath>
+        <repairMethod>ID</repairMethod>
+        <resOutPath>../datasets/P2/output/1DRSrc.csv</resOutPath>
+        <vertexLabel>clsId</vertexLabel>
+        <resOutInfo>ID1</resOutInfo>
+        <IDIntDepth>1</IDIntDepth>
+        <srcNo>10</srcNo>
+        <srcNames>1,2,3,4,5,6,7,8,9,10</srcNames>
+        <isCSV>true</isCSV>
+    </runConfig>
+
+    <runs>
+        <!--SRC_BATCH        -->
+        <runConfig>
+            <id>0</id>
+            <runId>0</runId>
+            <linkingConfFilePath>P2/linking-hol.xml</linkingConfFilePath>
+            <incrementLength>10</incrementLength>
+            <initialCollectionPath>../datasetP2/SrcIncs/</initialCollectionPath>
+            <tempOutPath>../dataset/P2/temp/</tempOutPath>
+            <resOutPath>../datasets/P2/output/BatchSrc.csv</resOutPath>
+            <vertexLabel>clsId</vertexLabel>
+            <resOutInfo>batch</resOutInfo>
+            <srcNames>1,2,3,4,5,6,7,8,9,10</srcNames>
+            <isWithSameId>true</isWithSameId>
+            <isCSV>true</isCSV>
+
+        </runConfig>
+
+    </runs>
+
+
+</runs>
+

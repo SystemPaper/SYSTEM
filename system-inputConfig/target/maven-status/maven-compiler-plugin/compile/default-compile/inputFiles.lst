@@ -1,0 +1,16 @@
+/home/alieh/FAMER/famer-inputConfig/src/main/java/org/gradoop/famer/inputConfig/phase/Phase.java
+/home/alieh/FAMER/famer-inputConfig/src/main/java/org/gradoop/famer/inputConfig/phase/linking/similarity_measuring/SimilarityMeasuringPhase.java
+/home/alieh/FAMER/famer-inputConfig/src/main/java/org/gradoop/famer/inputConfig/phase/linking/selection/Condition.java
+/home/alieh/FAMER/famer-inputConfig/src/main/java/org/gradoop/famer/inputConfig/phase/InitialGraphGeneratorPhase.java
+/home/alieh/FAMER/famer-inputConfig/src/main/java/org/gradoop/famer/inputConfig/PhaseTitles.java
+/home/alieh/FAMER/famer-inputConfig/src/main/java/org/gradoop/famer/inputConfig/phase/linking/blocking/BlockingPhase.java
+/home/alieh/FAMER/famer-inputConfig/src/main/java/org/gradoop/famer/inputConfig/phase/linking/LinkingPhase.java
+/home/alieh/FAMER/famer-inputConfig/src/main/java/org/gradoop/famer/inputConfig/phase/linking/blocking/BlockingKeyGenerationPhase.java
+/home/alieh/FAMER/famer-inputConfig/src/main/java/org/gradoop/famer/inputConfig/phase/linking/similarity_measuring/SimilarityComponent.java
+/home/alieh/FAMER/famer-inputConfig/src/main/java/org/gradoop/famer/inputConfig/phase/WriteGraphPhase.java
+/home/alieh/FAMER/famer-inputConfig/src/main/java/org/gradoop/famer/inputConfig/phase/linking/selection/SelectionRule.java
+/home/alieh/FAMER/famer-inputConfig/src/main/java/org/gradoop/famer/inputConfig/XMLReader.java
+/home/alieh/FAMER/famer-inputConfig/src/main/java/org/gradoop/famer/inputConfig/phase/ReadGraphPhase.java
+/home/alieh/FAMER/famer-inputConfig/src/main/java/org/gradoop/famer/inputConfig/phase/linking/selection/SimilarityAggregatorRule.java
+/home/alieh/FAMER/famer-inputConfig/src/main/java/org/gradoop/famer/inputConfig/phase/linking/selection/SelectionPhase.java
+/home/alieh/FAMER/famer-inputConfig/src/main/java/org/gradoop/famer/inputConfig/LinkerConfig.java

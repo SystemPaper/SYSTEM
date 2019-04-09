@@ -1,0 +1,21 @@
+package org.tool.system.example.util;
+
+public enum Method {
+    EARLY_MAX_BOTH_T,
+    LATE_MAX_BOTH_T,
+    EARLY_MAX_BOTH_F,
+    LATE_MAX_BOTH_F,
+    EARLY_MAX_BOTH_T_FUSED,
+    LATE_MAX_BOTH_T_FUSED,
+    EARLY_MAX_BOTH_F_FUSED,
+    LATE_MAX_BOTH_F_FUSED,
+    ONE_DEPTH_RREC_T,
+    ONE_DEPTH_REC_F,
+    ENTITY_BATCH,
+
+    SRC_MAX_BOTH,
+    SRC_MAX_BOTH_FUSED,
+    SRC_ONE_DEPTH_RREC,
+    SRC_BATCH
+
+}

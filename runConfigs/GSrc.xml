@@ -1,0 +1,73 @@
+<runs>
+
+    <!--MB-->
+    <runConfig>
+        <id>0</id>
+        <runId>0</runId>
+        <linkingConfFilePath>linkingConfXMLs/G/5-ny,fb,geo,dp.xml</linkingConfFilePath>
+        <incrementLength>4</incrementLength>
+        <initialCollectionPath>../SYSTEM/datasets/G/src/</initialCollectionPath>
+        <tempOutPath>../SYSTEM/datasets/G/temp/</tempOutPath>
+        <repairMethod>EMB</repairMethod>
+        <resOutPath>../SYSTEM/datasets/G/output/SrcMB.csv</resOutPath>
+        <vertexLabel>clusterId</vertexLabel>
+        <resOutInfo>embSrc</resOutInfo>
+        <srcNames>ny,fb,geo,dp</srcNames>
+    </runConfig>
+
+      <!--MBFused-->
+    <runConfig>
+        <id>0</id>
+        <runId>3</runId>
+        <linkingConfFilePath>linkingConfXMLs/G/5-ny,fb,geo,dp.xml</linkingConfFilePath>
+        <incrementLength>4</incrementLength>
+        <initialCollectionPath>../SYSTEM/datasets/G/src/</initialCollectionPath>
+        <tempOutPath>./datasets/G/temp/</tempOutPath>
+        <repairMethod>EMB</repairMethod>
+        <resOutPath>../SYSTEM/datasets/G/output/SrcMBFused.csv</resOutPath>
+        <vertexLabel>clsId</vertexLabel>
+        <resOutInfo>embSrcFused</resOutInfo>
+        <isPreclustering>false</isPreclustering>
+        <vertexGroupingKey>ClusterId</vertexGroupingKey>
+        <wccPropertyKeyList>label,lat_lon,clusterId,graphLabel</wccPropertyKeyList>
+        <repetitionAllowed>false,false,true,true</repetitionAllowed>
+        <isEdgeAggregation>false</isEdgeAggregation>
+        <srcNames>ny,fb,geo,dp</srcNames>
+
+    </runConfig>
+        <!--1DR-->
+        <runConfig>
+            <id>1</id>
+            <runId>2</runId>
+            <linkingConfFilePath>linkingConfXMLs/G/5-ny,fb,geo,dp.xml</linkingConfFilePath>
+            <incrementLength>4</incrementLength>
+            <initialCollectionPath>../SYSTEM/datasets/G/src/</initialCollectionPath>
+            <tempOutPath>./datasets/G/temp/</tempOutPath>
+            <repairMethod>ID</repairMethod>
+            <resOutPath>../SYSTEM/datasets/G/output/Src1DR.csv</resOutPath>
+            <vertexLabel>clsId</vertexLabel>
+            <resOutInfo>ID1</resOutInfo>
+            <isWithSameId>true</isWithSameId>
+            <IDIntDepth>1</IDIntDepth>
+            <srcNo>4</srcNo>
+            <srcNames>ny,fb,geo,dp</srcNames>
+
+        </runConfig>
+
+    <!--batch-->
+    <runConfig>
+        <id>0</id>
+        <runId>0</runId>
+        <linkingConfFilePath>linkingConfXMLs/G/5-ny,fb,geo,dp.xml</linkingConfFilePath>
+        <incrementLength>10</incrementLength>
+        <initialCollectionPath>../SYSTEM/datasets/G/src/</initialCollectionPath>
+        <tempOutPath>./datasets/G/temp/</tempOutPath>
+        <resOutPath>../SYSTEM/datasets/G/output/SrcBatch.csv</resOutPath>
+        <vertexLabel>clsId</vertexLabel>
+        <resOutInfo>batch</resOutInfo>
+        <srcNames>ny,fb,geo,dp</srcNames>
+
+    </runConfig>
+</runs>
+
+
